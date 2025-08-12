@@ -12,7 +12,8 @@
       "Bash(timeout 10s npm run dev)",
       "Bash(true)",
       "Bash(npm run lint)",
-      "WebFetch(domain:wendeehsu.github.io)"
+      "WebFetch(domain:wendeehsu.github.io)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }

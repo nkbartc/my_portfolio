@@ -5,7 +5,7 @@ import { scrollToSection } from '../utils/scroll';
 import { useScrollSpy } from '../hooks/useIntersection';
 
 const Sidebar: React.FC = () => {
-  const sections = ['about', 'experience', 'projects'];
+  const sections = ['about', 'education', 'experience', 'projects'];
   const activeSection = useScrollSpy(sections);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {

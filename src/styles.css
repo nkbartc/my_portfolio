@@ -379,14 +379,11 @@ section {
   border-radius: var(--border-radius);
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
   transition: var(--transition);
 }
 
 .image-wrapper:hover .profile-image {
-  filter: none;
-  mix-blend-mode: normal;
+  transform: scale(1.02);
 }
 
 .image-overlay {
@@ -395,14 +392,205 @@ section {
   height: 100%;
   border-radius: var(--border-radius);
   transition: var(--transition);
-  background-color: var(--green);
-  opacity: 0.5;
+  background: var(--gradient-primary);
+  opacity: 0.2;
   top: 0;
   left: 0;
 }
 
 .image-wrapper:hover .image-overlay {
   opacity: 0;
+}
+
+/* Education Section */
+.educations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 50px 0;
+}
+
+.education-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.education-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* School Logo Styles */
+.school-logo {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.school-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.school-initial {
+  font-size: var(--fz-xl);
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.school-initial.hidden {
+  display: none;
+}
+
+/* Education Info Styles */
+.education-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education-primary {
+  flex: 1;
+}
+
+.degree-title {
+  color: var(--text-primary);
+  font-size: var(--fz-xl);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.school-name {
+  color: var(--primary);
+  font-size: var(--fz-lg);
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.education-location {
+  color: var(--text-muted);
+  font-size: var(--fz-sm);
+  margin: 0;
+}
+
+.graduation-date {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.date-badge {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+  font-weight: 600;
+  border: 1px solid var(--primary);
+}
+
+/* Education Details */
+.education-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.education-gpa,
+.education-honors,
+.education-coursework {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+  font-size: var(--fz-md);
+}
+
+.education-gpa strong,
+.education-honors strong,
+.education-coursework strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.honors-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.honor-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.honor-dot {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.course-tag {
+  background-color: var(--surface);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: var(--fz-xs);
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.course-tag:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-1px);
 }
 
 /* Experience Section - LinkedIn Style */
@@ -439,11 +627,11 @@ section {
 /* Company Logo Styles */
 .company-logo {
   position: relative;
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
   overflow: hidden;
-  background: var(--gradient-accent);
+  background: var(--surface);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,8 +643,9 @@ section {
 .company-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
+  padding: 4px;
 }
 
 .company-initial {
@@ -776,8 +965,8 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(10, 25, 47, 0.95);
-  backdrop-filter: blur(8px);
+  background-color: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(12px);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -844,13 +1033,16 @@ section {
   padding: 0;
   max-height: 100%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-content.has-padding {
   padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .modal-image {
@@ -865,6 +1057,7 @@ section {
   height: 100%;
   border: none;
   border-radius: 12px;
+  aspect-ratio: 16/9;
 }
 
 .modal-link-content {
@@ -1059,6 +1252,52 @@ section {
     grid-template-columns: 1fr;
   }
   
+  /* Education Mobile Styles */
+  .education-card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .education-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .school-logo {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .school-initial {
+    font-size: var(--fz-lg);
+  }
+  
+  .education-info {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .graduation-date {
+    margin-left: 0;
+    align-self: center;
+  }
+  
+  .degree-title {
+    font-size: var(--fz-lg);
+  }
+  
+  .school-name {
+    font-size: var(--fz-md);
+  }
+  
+  .coursework-tags {
+    justify-content: center;
+  }
+
   /* Experience Mobile Styles */
   .experience-card {
     padding: 20px;
@@ -1073,8 +1312,8 @@ section {
   
   .company-logo {
     align-self: center;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
   
   .company-initial {

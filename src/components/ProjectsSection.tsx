@@ -82,7 +82,7 @@ const ProjectsSection: React.FC = () => {
         className="section-content"
       >
         <h2 className="section-title">
-          <span className="section-number">03.</span> Things I've Built
+          <span className="section-number">04.</span> Things I've Built
         </h2>
 
         {featuredProjects.length > 0 && (

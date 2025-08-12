@@ -163,7 +163,7 @@ const ExperienceSection: React.FC = () => {
         className="section-content"
       >
         <h2 className="section-title">
-          <span className="section-number">02.</span> Experience
+          <span className="section-number">03.</span> Experience
         </h2>
 
         <div className="experiences-container">

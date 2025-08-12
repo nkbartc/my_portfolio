@@ -1,10 +1,10 @@
 export const siteContent = {
   name: "Bart Chou",
   title: "Full Stack Developer",
-  email: "bart@example.com",
+  email: "bartchouf@gmail.com",
   github: "https://github.com/nkbartc",
-  linkedin: "https://linkedin.com/in/bartchou",
-  twitter: "https://twitter.com/bartchou",
+  linkedin: "https://www.linkedin.com/in/bart-chou/",
+  profileImage: "/assets/profile.jpeg",
   
   about: {
     title: "About Me",
@@ -31,6 +31,33 @@ export const siteContent = {
     ]
   },
   
+  educations: [
+    {
+      id: "edu1",
+      degree: "Master of Science",
+      field: "Computer Science",
+      school: "Virginia Polytechnic Institute and State University",
+      location: "Blacksburg, Virginia, USA",
+      graduationDate: "December 2022",
+      gpa: "",
+      honors: [],
+      coursework: [],
+      logo: ""
+    },
+    {
+      id: "edu2", 
+      degree: "Bachelor of Science",
+      field: "Computer Science",
+      school: "University of Minnesota Twin Cities",
+      location: "Minneapolis, Minnesota, USA", 
+      graduationDate: "December 2019",
+      gpa: "",
+      honors: [],
+      coursework: [],
+      logo: ""
+    }
+  ],
+  
   experiences: [
     {
       id: "exp1",
@@ -47,7 +74,7 @@ export const siteContent = {
         "Integrated Stripe & HubSpot — automated billing and CRM workflows.",
         "Built n8n workflows — reduced manual integrations by 50%+."
       ],
-      companyLogo: "/logos/morph.png",
+      companyLogo: "/assets/morphLogo.svg",
       media: [
         {
           id: "media1",
@@ -55,15 +82,8 @@ export const siteContent = {
           title: "Morph Technologies Platform Demo",
           description: "AI-powered home inspection platform built with React and Django",
           url: "https://morph-technologies.com/",
-          thumbnail: "/media/morph-platform.png"
+          thumbnail: "/assets/morphLogo.svg"
         },
-        {
-          id: "media2",
-          type: "image" as const,
-          title: "System Architecture Diagram",
-          description: "AWS microservices architecture with Lambda and ECS",
-          url: "/media/morph-architecture.png"
-        }
       ]
     },
     {
@@ -78,7 +98,7 @@ export const siteContent = {
         "Led 5-person team in cross-functional agile workflows — improved delivery speed",
         "Launched MVP in 4 months — boosted adoption via rapid UI/UX iteration"
       ],
-      companyLogo: "/logos/beehex.png",
+      companyLogo: "/assets/beehex_logo.png",
       roles: [
         {
           title: "Lead Software Engineer",
@@ -100,7 +120,7 @@ export const siteContent = {
         {
           id: "media3",
           type: "video" as const,
-          title: "BeeHex Automation Demo at Kroger",
+          title: "Cake Writer at Kroger",
           description: "3D food printing technology deployed at Kroger stores",
           url: "https://youtube.com/watch?v=f4nEwsk46Ug",
           embedUrl: "https://www.youtube.com/embed/f4nEwsk46Ug?si=NfpZF7TTEioddGBF",
@@ -120,7 +140,7 @@ export const siteContent = {
           title: "BeeHex Company Website",
           description: "Food automation and 3D printing solutions",
           url: "https://beehex.com",
-          thumbnail: "/media/beehex-website.png"
+          thumbnail: "/assets/beehex_logo.png"
         },
       ]
     },
@@ -138,7 +158,7 @@ export const siteContent = {
         "Built C# APIs + optimized MSSQL — cut query latency by 60%",
         "Engineered real-time visualizations — improved decision-making for traders."
       ],
-      companyLogo: "/logos/oati.png",
+      companyLogo: "/assets/oati_logo.png",
       media: [
         {
           id: "media6",
@@ -146,15 +166,8 @@ export const siteContent = {
           title: "OATI Energy Trading Platform",
           description: "Enterprise-grade energy trading and market analytics platform",
           url: "https://oati.com",
-          thumbnail: "/media/oati-platform.png"
+          thumbnail: "/assets/oati_logo.png"
         },
-        {
-          id: "media7",
-          type: "image" as const,
-          title: "Real-time Trading Dashboard",
-          description: "Interactive data visualizations for energy market analysis",
-          url: "/media/oati-dashboard.png"
-        }
       ]
     },
     {
@@ -171,24 +184,7 @@ export const siteContent = {
         "Created Django eCommerce site — enabled 3D-printed product sales.",
         "Optimized backend — reduced response time by 60%."
       ],
-      companyLogo: "/logos/oati.png",
-      media: [
-        {
-          id: "media6",
-          type: "link" as const,
-          title: "OATI Energy Trading Platform",
-          description: "Enterprise-grade energy trading and market analytics platform",
-          url: "https://oati.com",
-          thumbnail: "/media/oati-platform.png"
-        },
-        {
-          id: "media7",
-          type: "image" as const,
-          title: "Real-time Trading Dashboard",
-          description: "Interactive data visualizations for energy market analysis",
-          url: "/media/oati-dashboard.png"
-        }
-      ]
+      companyLogo: "/assets/beehex_logo.png",
     }
   ],
   
@@ -234,6 +230,20 @@ export const siteContent = {
       featured: false
     }
   ]
+};
+
+// Define education type
+export type Education = {
+  id: string;
+  degree: string;
+  field: string;
+  school: string;
+  location: string;
+  graduationDate: string;
+  gpa?: string;
+  honors?: string[];
+  coursework?: string[];
+  logo?: string;
 };
 
 // Define role type for multiple roles within same company

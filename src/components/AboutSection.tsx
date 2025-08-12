@@ -55,11 +55,10 @@ const AboutSection: React.FC = () => {
           <div className="about-image">
             <div className="image-wrapper">
               <img 
-                src="/profile.jpg" 
+                src={siteContent.profileImage} 
                 alt={siteContent.name}
                 className="profile-image"
               />
-              <div className="image-overlay"></div>
             </div>
           </div>
         </div>
