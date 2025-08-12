@@ -11,7 +11,8 @@
       "Bash(npx tsc:*)",
       "Bash(timeout 10s npm run dev)",
       "Bash(true)",
-      "Bash(npm run lint)"
+      "Bash(npm run lint)",
+      "WebFetch(domain:wendeehsu.github.io)"
     ],
     "deny": []
   }
