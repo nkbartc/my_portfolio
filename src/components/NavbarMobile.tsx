@@ -6,7 +6,7 @@ import { useScrollSpy } from '../hooks/useIntersection';
 
 const NavbarMobile: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
-  const sections = ['about', 'education', 'experience', 'projects'];
+  const sections = ['about', 'education', 'experience'];
   const activeSection = useScrollSpy(sections);
 
   const handleNavClick = (sectionId: string) => {

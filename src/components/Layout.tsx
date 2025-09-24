@@ -4,7 +4,6 @@ import NavbarMobile from './NavbarMobile';
 import AboutSection from './AboutSection';
 import EducationsSection from './EducationsSection';
 import ExperienceSection from './ExperienceSection';
-import ProjectsSection from './ProjectsSection';
 
 const Layout: React.FC = () => {
   return (
@@ -23,7 +22,6 @@ const Layout: React.FC = () => {
             <AboutSection />
             <EducationsSection />
             <ExperienceSection />
-            <ProjectsSection />
           </div>
         </main>
       </div>

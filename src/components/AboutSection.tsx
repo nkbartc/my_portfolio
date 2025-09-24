@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
           <div className="about-text">
             <p className="about-bio">{siteContent.about.bio}</p>
             
-            <div className="about-values">
+            {/* <div className="about-values">
               <h3 className="subsection-title">What I Value</h3>
               <ul className="values-list">
                 {siteContent.about.values.map((value, index) => (
@@ -49,7 +49,7 @@ const AboutSection: React.FC = () => {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="about-image">
