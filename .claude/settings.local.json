@@ -13,7 +13,10 @@
       "Bash(true)",
       "Bash(npm run lint)",
       "WebFetch(domain:wendeehsu.github.io)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }

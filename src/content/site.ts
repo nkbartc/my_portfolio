@@ -4,7 +4,7 @@ export const siteContent = {
   email: "bartchouf@gmail.com",
   github: "https://github.com/nkbartc",
   linkedin: "https://www.linkedin.com/in/bart-chou/",
-  profileImage: "/assets/profile.jpeg",
+  profileImage: "./assets/profile.jpeg",
   
   about: {
     title: "About Me",
@@ -43,7 +43,7 @@ systems, with a consistent focus on performance, scalability, and business impac
       gpa: "",
       honors: [],
       coursework: [],
-      logo: "/assets/vt_logo.png"
+      logo: "./assets/vt_logo.png"
     },
     {
       id: "edu2", 
@@ -55,7 +55,7 @@ systems, with a consistent focus on performance, scalability, and business impac
       gpa: "",
       honors: [],
       coursework: [],
-      logo: "/assets/um_logo.png"
+      logo: "./assets/um_logo.png"
     }
   ],
   
@@ -75,7 +75,7 @@ systems, with a consistent focus on performance, scalability, and business impac
         // "Integrated Stripe & HubSpot — automated billing and CRM workflows.",
         // "Built n8n workflows — reduced manual integrations by 50%+."
       ],
-      companyLogo: "/assets/morphLogo.svg",
+      companyLogo: "./assets/morphLogo.svg",
       media: [
         {
           id: "media1",
@@ -83,7 +83,7 @@ systems, with a consistent focus on performance, scalability, and business impac
           title: "Morph Technologies Platform Demo",
           description: "AI-powered home inspection platform built with React and Django",
           url: "https://morph-technologies.com/",
-          thumbnail: "/assets/morphLogo.svg"
+          thumbnail: "./assets/morphLogo.svg"
         },
       ]
     },
@@ -99,7 +99,7 @@ systems, with a consistent focus on performance, scalability, and business impac
         // "Led 5-person team in cross-functional agile workflows — improved delivery speed",
         // "Launched MVP in 4 months — boosted adoption via rapid UI/UX iteration"
       ],
-      companyLogo: "/assets/beehex_logo.png",
+      companyLogo: "./assets/beehex_logo.png",
       roles: [
         {
           title: "Lead Software Engineer",
@@ -141,7 +141,7 @@ systems, with a consistent focus on performance, scalability, and business impac
           title: "BeeHex Company Website",
           description: "Food automation and 3D printing solutions",
           url: "https://beehex.com",
-          thumbnail: "/assets/beehex_logo.png"
+          thumbnail: "./assets/beehex_logo.png"
         },
       ]
     },
@@ -159,7 +159,7 @@ systems, with a consistent focus on performance, scalability, and business impac
         // "Built C# APIs + optimized MSSQL — cut query latency by 60%",
         // "Engineered real-time visualizations — improved decision-making for traders."
       ],
-      companyLogo: "/assets/oati_logo.png",
+      companyLogo: "./assets/oati_logo.png",
       media: [
         {
           id: "media6",
@@ -167,7 +167,7 @@ systems, with a consistent focus on performance, scalability, and business impac
           title: "OATI Energy Trading Platform",
           description: "Enterprise-grade energy trading and market analytics platform",
           url: "https://oati.com",
-          thumbnail: "/assets/oati_logo.png"
+          thumbnail: "./assets/oati_logo.png"
         },
       ]
     },
@@ -185,7 +185,7 @@ systems, with a consistent focus on performance, scalability, and business impac
         // "Created Django eCommerce site — enabled 3D-printed product sales.",
         // "Optimized backend — reduced response time by 60%."
       ],
-      companyLogo: "/assets/beehex_logo.png",
+      companyLogo: "./assets/beehex_logo.png",
     }
   ],
   
