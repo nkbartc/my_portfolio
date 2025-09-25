@@ -24,7 +24,6 @@ const Sidebar: React.FC = () => {
         <div className="sidebar-header">
           <h1 className="sidebar-name">{siteContent.name}</h1>
           <h2 className="sidebar-title">{siteContent.title}</h2>
-          <p className="sidebar-tagline">I build things for the web</p>
         </div>
 
         <nav className="sidebar-nav" aria-label="Main navigation">
